@@ -14,5 +14,5 @@ echo "CMD python /home/myapp/assessment_code.py" >> tempdir/Dockerfile
 
 cd tempdir
 docker build -t assessmentcodeimage .
-docker run -t -p 5050:5050 --name assessment2container assessmentcodeimage
+docker run -d -p 5050:5050 --name assessment2container assessmentcodeimage
 docker ps -a
